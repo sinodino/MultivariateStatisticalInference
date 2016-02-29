@@ -2,6 +2,7 @@
 Course projects of MSI
 
 Homework 1
+
 Q1. [R] Write a function, named ‘MD’, to calculate Mahalanobis Distance.
 Q2. [R] A public opinion poll surveyed a sample of 1000 voters randomly. Respondents were classified by gender (male or female) and by voting preference (Republican, Democrat, or Independent). Results are shown in the contingency table below. Use both visualization and statistical test to tell me something you learn from the data.
 Q3. [R] The dataset datahw1.txt contains three variables, without knowing what kind of variables they are, use exploratory data analysis and visualization, including but not limited to summary statistics (means and variances), scatter plot matrix (hint: scatterplotmatrix() or pairs()), report what you find and identify potential outliers.
@@ -15,7 +16,8 @@ is/are easier?
 (6) Anything else? (Bonus)
 
 Homework 2
-Q3. [R] Principal Component Analysis on pendigit data from UC Irvine Machine Learning Repository at http://archive.ics.uci.edu/ml/datasets/Pen- Based+Recognition+of+Handwritten+Digits. 
+
+Q3. [R] Principal Component Analysis on pendigit data from UC Irvine Machine Learning Repository at http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits. 
 I have already downloaded the dataset for you and save it as a .txt file. The dataset contains 3498 rows observations of 17 columns. The column 1 – 16 are variables of our interest, the last column of the data contains number 0 – 9, represents that the observation is a writing of a digit 0 – 9, e.g. if the column number is 3, it means it is a writing of a digit 3. You can think of this variable like a class variable. You can get better understanding after reading the dataset description. And the columns 1-16 are equal spaced locations of a pen at 8 timepoints, and are arranged as x1, y1,x2, y2,...,x7, y7,x8, y8 , and any pair (xi , yi ) is the location of a pen at timepoint i.
 Now use the dataset to answer the following questions:
 (1) For different class (last column of the dataset), visualize the first observation for
@@ -27,6 +29,7 @@ dataset, name it pendigit3, which only contains class 3, or digit 3 (hint: the l
 (5) Now use the subsetting you learnt in the first R practical section again to create another subset, name it pendigit38, which contains class 3 and 8. Perform PCA on the new dataset pendigit38, now report what you find from the analysis with plots. (hint: you may still need scatterplot matrix) And since now you have two classes in your dataset, and from Question (1), you know that the plot gives you the digit, do you see a good separation of observations correponding to the two classes?
 
 Homework 3
+
 Q1. [R] [Textbook IAMA Ex. 3.1] Construct the scatterplot of the heptathlon data showing the contours of the estimated bivariate density function on each panel. Is this graphic more useful than the unenhanced scatterplot matrix?
 Q2. [R] [Textbook IAMA Ex. 3.2] Construct a diagram that shows the SO2 variable in the air pollution data plotted against each of the six explanatory variables, and in each of the scatterplots show the fitted linear regression and a fitted locally weighted regression. Does this diagram help in deciding on the most appropriate model for determining the variables most predictive of sulphur dioxide levels?
 Q3. [R] Load the zehnkampf.dat. The data is the result of the decathlon at the Olympic Games in Atlanta in 1996. You will see that there are 11 variables in total.
@@ -48,3 +51,11 @@ If 25<=|i-j|,sij=0;
 
 Convert the similarities into dissimilarities by sqrt(sii+sjj-2sij)
 and then apply classical multidimensional scaling to the resulting dissimilarity matrix. Explain the shape of the derived two-dimensional solution.
+
+Homework 4
+
+Q1. [R] [Textbook IAMA Ex.4.2] Write an R function to calculate the chi-squared distance matrices for
+both rows and columns in a two-dimensional contingency table.
+Q2. [R] [Textbook IAMA Ex.4.3] Use R data "gardenflowers" in the package “HSAUR2". The dissimilarity matrix of 18 species of garden flowers is shown. Use some form of multidimensional scaling to investigate which species share common properties.
+Q3. [R] Remember when we discussed the role of exploratory data analysis and visualization, we used the “USairpollution” data in the package “HSAUR2". I showed you the star plots or segment diagrams of the multivariate data (attached below). And we had some interesting discussion together to identify cities that have similar patterns, or cities that are close to each other but have different patterns etc. The EDAV is already helping us to identify interesting patterns and providing a guide to “what is the next step” or “what kind of method we should use to analyze the data further”. Now use MDS to analyze the data and compare to the geophysical mapping of these cities. Tell me everything that you find interesting and/or surprising to you.
+(Hint: you might want to use package “maps” for making the geographical map of the 41 cities, or simply find out the coordinates of these cities (total 41) manually, save in a .csv file and make the map, it is up to you to decide which one you want to use, as some of you are familiar with R package “maps”, some are not. Choose either one you feel more comfortable with.)
